@@ -1,0 +1,30 @@
+a:hover {
+    background-color: limegreen;
+}
+
+.erilainen {
+    background-color: lightblue;
+}
+
+.ul {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 200px;
+}
+
+.table {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 200px;
+}
+
+#demo {
+    border: red 2px solid;
+}
+
+#inner {
+    width: 50%;
+    margin: 0 auto;
+}
