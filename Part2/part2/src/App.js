@@ -24,8 +24,7 @@ class App extends React.Component {
     const noteObject = {
       content: this.state.newNote,
       date: new Date().toISOString(),
-      important: Math.random() > 0.5,
-      id: this.state.notes.length + 1
+      important: Math.random() > 0.5
     }
     const notes = this.state.notes.concat(noteObject)
 
