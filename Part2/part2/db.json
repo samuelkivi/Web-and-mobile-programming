@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "important": true,
+      "content": "Buy some eggs",
+      "timestamp": "2021-11-10T13:00:00.141Z",
+      "id": 1
+    },
+    {
+      "important": true,
+      "content": "Make omelette",
+      "timestamp": "2021-11-11T08:00:00.141Z",
+      "id": 2
+    },
+    {
+      "important": true,
+      "content": "Wash dishes",
+      "timestamp": "2021-11-11T09:00:00.000Z",
+      "id": 3
+    },
+    {
+      "important": true,
+      "content": "Buy more eggs",
+      "timestamp": "2021-11-11T13:00:00.000Z",
+      "id": 4
+    }
+  ]
+}
