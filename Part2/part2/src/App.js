@@ -17,7 +17,7 @@ class App extends React.Component {
   componentDidMount() {
     console.log('did mount')
     axios
-      .get('http://localhost:3001/api/reminders')
+      .get('https://web-and-mobile-programming.herokuapp.com/api/reminders/')
       .then(response => {
         console.log('promise fulfilled')
         this.setState({ notes: response.data })
@@ -69,25 +69,21 @@ class App extends React.Component {
       newTime: ''
     })
 
-    axios.post('http://localhost:3001/api/reminders', noteObject)
+    axios.post('https://web-and-mobile-programming.herokuapp.com/api/reminders', noteObject)
       .then(response => {
         console.log(response)
       })
   }
 
   deleteNote = (props) => {
+    console.log(props)
     if (window.confirm("Do you really want to remove reminder?")) {
-      let url = 'http://localhost:3001/api/reminders/' + props
+      let url = 'https://web-and-mobile-programming.herokuapp.com/api/reminders/' + props
       axios.delete(url, {
       });
       window.location.reload(true);
     }
-    else {
-    }
   }
-
-  
-
 
   render() {
     return (

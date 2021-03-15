@@ -78,10 +78,8 @@ function isNameInList(content) {
 }
 
 const generateId = () => {
-    //const maxId = reminders.length > 0 ? reminders.map(n => n.id).sort((a, b) => a - b).reverse()[0] : 1
-    //return maxId + 1
-    //ps. eikö olisi fiksumpaa käyttää tota esimerkeissä ollutta?
-    return Math.floor(Math.random() * Math.floor(1000000));
+    const maxId = reminders.length > 0 ? reminders.map(n => n.id).sort((a, b) => a - b).reverse()[0] : 1
+    return maxId + 1
 }
 
 app.post('/api/reminders', (request, response) => {
