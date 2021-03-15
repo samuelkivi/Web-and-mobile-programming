@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // Replace with the URL of your own database. Do not store the password on GitLab!
-const url = 'mongodb+srv://web-and-mobile:mymongodbdatabase@cluster0.lx7sz.mongodb.net/myFirstDatabase?'
+const url = 'mongodb+srv://web-and-mobile:secret@cluster0.lx7sz.mongodb.net/myFirstDatabase?'
 
 mongoose.connect(url)
 
