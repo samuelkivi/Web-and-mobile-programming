@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+
+app.use(cors());
 
 let reminders = [
     {
@@ -101,6 +104,7 @@ app.post('/api/reminders', (request, response) => {
     response.json(reminder)
 })
 
-const port = 3001
-app.listen(port)
-console.log(`Server running on port ${port}`)
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
