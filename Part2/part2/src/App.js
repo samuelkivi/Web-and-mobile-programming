@@ -108,8 +108,8 @@ class App extends React.Component {
         </form>
         <h2>Reminders:</h2>
         {this.state.notes.map(item => (
-          <li key={item.id}> {item.content} {item.Time}
-            <button type="Delete" onClick={() => this.deleteNote(item.id)}>Delete</button>
+          <li key={item._id}> {item.content} {item.Time}
+            <button type="Delete" onClick={() => this.deleteNote(item._id)}>Delete</button>
           </li>
         ))
         }

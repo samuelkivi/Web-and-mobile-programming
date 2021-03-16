@@ -3,13 +3,5 @@ Content-Type: application/json
 
 {
     "important": true,
-    "content": "Buy some eggssss"
-}
-
-POST http://localhost:3001/api/reminders
-Content-Type: application/json
-
-{
-    "important": true,
-    "content": "Buy some eggssss"
+    "content": "Buy some eggssss3"
 }
